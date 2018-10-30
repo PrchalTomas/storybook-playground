@@ -870,6 +870,18 @@
     global "^4.3.2"
     prop-types "^15.6.2"
 
+"@storybook/addon-storyshots@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-4.0.0.tgz#836dec662eb071d07f5e06fcb9bf798631b74289"
+  integrity sha512-bwvwszQd6/FIppImgAZJo+fcE/7erAziCxhdborj2n/uG/TiSMP9JPbjtoviEHqjK75q9nu0hbpcfvloGqqGnQ==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    "@storybook/addons" "4.0.0"
+    glob "^7.1.3"
+    global "^4.3.2"
+    jest-specific-snapshot "^1.0.0"
+    read-pkg-up "^4.0.0"
+
 "@storybook/addons@4.0.0", "@storybook/addons@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.0.tgz#b71b545a735b902fa62934ac98fd262b65c924f7"
@@ -1105,6 +1117,13 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"
   integrity sha512-ZBFR7TROLVzCkswA3Fmqq+IIJt62/T7aY/Dmz+QkU7CaW2QFqAitCE8Ups7IzmGhcN1YWMBT4Qcoc07jU9hOJQ==
 
+"@types/puppeteer@*":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-1.9.1.tgz#a2499bb7eff5da8e9197f8407205e7b28bece29a"
+  integrity sha512-oEDHOxH398JxzMdSaylEVSsbI1F9cHUOuD+3Vk51F9/KQOPlO4cJAlDCHSNqG/bgAaaw0+T7iKvh0vHTeexf1A==
+  dependencies:
+    "@types/node" "*"
+
 "@types/react-dom@^16.0.9":
   version "16.0.9"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.9.tgz#73ceb7abe6703822eab6600e65c5c52efd07fb91"
@@ -1125,6 +1144,14 @@
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@types/storybook__addon-actions/-/storybook__addon-actions-3.4.1.tgz#8f90d76b023b58ee794170f2fe774a3fddda2c1d"
   integrity sha512-An8pNb1/7QhkdOT8Ht5WjJsSxAh2mWti/J4eILwUHpXVZ1j3xlVaOzwTbg8twN4DjgOAggjEDOj6Bx8YOWh9Pg==
+
+"@types/storybook__addon-storyshots@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@types/storybook__addon-storyshots/-/storybook__addon-storyshots-3.4.3.tgz#fd39387b6bb3b3f5bd857b7de857b6574926217f"
+  integrity sha512-xn8V+3heUFbpMeVkkhG97CB0UaiWdr7QklmhZ7OftH4uS7VgposNybp+2/iwduoKQyfB7tLSxth9t5rOvDHWMA==
+  dependencies:
+    "@types/puppeteer" "*"
+    "@types/react" "*"
 
 "@types/storybook__react@^3.0.9":
   version "3.0.9"
@@ -2147,6 +2174,11 @@ babel-plugin-react-docgen@^2.0.0:
     lodash "^4.17.10"
     react-docgen "^3.0.0-rc.1"
 
+babel-plugin-require-context-hook@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-require-context-hook/-/babel-plugin-require-context-hook-1.0.0.tgz#3f0e7cce87c338f53639b948632fd4e73834632d"
+  integrity sha512-EMZD1563QUqLhzrqcThk759RhuNVX/ZJdrtGK6drwzgvnR+ARjWyXIHPbu+tUNaMGtPz/gQeAM2M6VUw2UiUeA==
+
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
@@ -2711,7 +2743,7 @@ babel-traverse@^6.18.0, babel-traverse@^6.24.1, babel-traverse@^6.26.0:
     invariant "^2.2.2"
     lodash "^4.17.4"
 
-babel-types@^6.18.0, babel-types@^6.19.0, babel-types@^6.24.1, babel-types@^6.26.0:
+babel-types@^6.0.0, babel-types@^6.18.0, babel-types@^6.19.0, babel-types@^6.24.1, babel-types@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.26.0.tgz#a3b073f94ab49eb6fa55cd65227a334380632497"
   integrity sha1-o7Bz+Uq0nrb6Vc1lInozQ4BjJJc=
@@ -2893,7 +2925,7 @@ browser-process-hrtime@^0.1.2:
   resolved "https://registry.yarnpkg.com/browser-process-hrtime/-/browser-process-hrtime-0.1.3.tgz#616f00faef1df7ec1b5bf9cfe2bdc3170f26c7b4"
   integrity sha512-bRFnI4NnjO6cnyLmOV/7PVoDEMJChlcfN0z4s1YMBY989/SvlfMI1lgCnkFUs53e9gQF+w7qu7XdllSTiSl8Aw==
 
-browser-resolve@^1.11.2:
+browser-resolve@^1.11.2, browser-resolve@^1.11.3:
   version "1.11.3"
   resolved "https://registry.yarnpkg.com/browser-resolve/-/browser-resolve-1.11.3.tgz#9b7cbb3d0f510e4cb86bdbd796124d28b5890af6"
   integrity sha512-exDi1BYWB/6raKHmDTCicQfTkqwN5fioMFV4j8BsfMU4R2DK/QfZfK7kOVkmWCNANf0snkBzqGqAJBao9gZMdQ==
@@ -5242,7 +5274,7 @@ glob2base@^0.0.12:
   dependencies:
     find-index "^0.1.1"
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2:
+glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3:
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
   integrity sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
@@ -6408,6 +6440,16 @@ jest-diff@^22.4.0, jest-diff@^22.4.3:
     jest-get-type "^22.4.3"
     pretty-format "^22.4.3"
 
+jest-diff@^23.6.0:
+  version "23.6.0"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-23.6.0.tgz#1500f3f16e850bb3d71233408089be099f610c7d"
+  integrity sha512-Gz9l5Ov+X3aL5L37IT+8hoCUsof1CVYBb2QEkOupK64XyRR3h+uRpYIm97K7sY8diFxowR8pIGEdyfMKTixo3g==
+  dependencies:
+    chalk "^2.0.1"
+    diff "^3.2.0"
+    jest-get-type "^22.1.0"
+    pretty-format "^23.6.0"
+
 jest-docblock@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-20.0.3.tgz#17bea984342cc33d83c50fbe1545ea0efaa44712"
@@ -6513,6 +6555,15 @@ jest-matcher-utils@^22.4.0, jest-matcher-utils@^22.4.3:
     jest-get-type "^22.4.3"
     pretty-format "^22.4.3"
 
+jest-matcher-utils@^23.6.0:
+  version "23.6.0"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-23.6.0.tgz#726bcea0c5294261a7417afb6da3186b4b8cac80"
+  integrity sha512-rosyCHQfBcol4NsckTn01cdelzWLU9Cq7aaigDf8VwwpIRvWE/9zLgX2bON+FkEW69/0UuYslUe22SOdEf2nog==
+  dependencies:
+    chalk "^2.0.1"
+    jest-get-type "^22.1.0"
+    pretty-format "^23.6.0"
+
 jest-matchers@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-matchers/-/jest-matchers-20.0.3.tgz#ca69db1c32db5a6f707fa5e0401abb55700dfd60"
@@ -6536,6 +6587,17 @@ jest-message-util@^22.4.0, jest-message-util@^22.4.3:
   version "22.4.3"
   resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-22.4.3.tgz#cf3d38aafe4befddbfc455e57d65d5239e399eb7"
   integrity sha512-iAMeKxhB3Se5xkSjU0NndLLCHtP4n+GtCqV0bISKA5dmOXQfEbdEmYiu2qpnWBDCQdEafNDDU6Q+l6oBMd/+BA==
+  dependencies:
+    "@babel/code-frame" "^7.0.0-beta.35"
+    chalk "^2.0.1"
+    micromatch "^2.3.11"
+    slash "^1.0.0"
+    stack-utils "^1.0.1"
+
+jest-message-util@^23.4.0:
+  version "23.4.0"
+  resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-23.4.0.tgz#17610c50942349508d01a3d1e0bda2c079086a9f"
+  integrity sha1-F2EMUJQjSVCNAaPR4L2iwHkIap8=
   dependencies:
     "@babel/code-frame" "^7.0.0-beta.35"
     chalk "^2.0.1"
@@ -6587,6 +6649,15 @@ jest-resolve@^22.4.2:
     browser-resolve "^1.11.2"
     chalk "^2.0.1"
 
+jest-resolve@^23.6.0:
+  version "23.6.0"
+  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-23.6.0.tgz#cf1d1a24ce7ee7b23d661c33ba2150f3aebfa0ae"
+  integrity sha512-XyoRxNtO7YGpQDmtQCmZjum1MljDqUCob7XlZ6jy9gsMugHdN2hY4+Acz9Qvjz2mSsOnPSH7skBmDYCHXVZqkA==
+  dependencies:
+    browser-resolve "^1.11.3"
+    chalk "^2.0.1"
+    realpath-native "^1.0.0"
+
 jest-runtime@^20.0.4:
   version "20.0.4"
   resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-20.0.4.tgz#a2c802219c4203f754df1404e490186169d124d8"
@@ -6607,6 +6678,22 @@ jest-runtime@^20.0.4:
     micromatch "^2.3.11"
     strip-bom "3.0.0"
     yargs "^7.0.2"
+
+jest-snapshot@>=20.0.3:
+  version "23.6.0"
+  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-23.6.0.tgz#f9c2625d1b18acda01ec2d2b826c0ce58a5aa17a"
+  integrity sha512-tM7/Bprftun6Cvj2Awh/ikS7zV3pVwjRYU2qNYS51VZHgaAMBs5l4o/69AiDHhQrj5+LA2Lq4VIvK7zYk/bswg==
+  dependencies:
+    babel-types "^6.0.0"
+    chalk "^2.0.1"
+    jest-diff "^23.6.0"
+    jest-matcher-utils "^23.6.0"
+    jest-message-util "^23.4.0"
+    jest-resolve "^23.6.0"
+    mkdirp "^0.5.1"
+    natural-compare "^1.4.0"
+    pretty-format "^23.6.0"
+    semver "^5.5.0"
 
 jest-snapshot@^20.0.3:
   version "20.0.3"
@@ -6631,6 +6718,13 @@ jest-snapshot@^22.4.0:
     mkdirp "^0.5.1"
     natural-compare "^1.4.0"
     pretty-format "^22.4.3"
+
+jest-specific-snapshot@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jest-specific-snapshot/-/jest-specific-snapshot-1.0.0.tgz#157c79e2534a6fea820fd475f5d17740c8f90833"
+  integrity sha512-EjCK8Ob8eneeQCdBuO06J1v1C1jklKK7VvCOG/iwQx+8byZ7iCY8+d9M7xlUJiu76ubycXtSkIrPrL+nqjJsjA==
+  dependencies:
+    jest-snapshot ">=20.0.3"
 
 jest-util@^20.0.3:
   version "20.0.3"
@@ -7004,6 +7098,16 @@ load-json-file@^2.0.0:
     graceful-fs "^4.1.2"
     parse-json "^2.2.0"
     pify "^2.0.0"
+    strip-bom "^3.0.0"
+
+load-json-file@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-4.0.0.tgz#2f5f45ab91e33216234fd53adab668eb4ec0993b"
+  integrity sha1-L19Fq5HjMhYjT9U62rZo607AmTs=
+  dependencies:
+    graceful-fs "^4.1.2"
+    parse-json "^4.0.0"
+    pify "^3.0.0"
     strip-bom "^3.0.0"
 
 loader-runner@^2.3.0:
@@ -8697,6 +8801,14 @@ pretty-format@^22.4.0, pretty-format@^22.4.3:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
+pretty-format@^23.6.0:
+  version "23.6.0"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-23.6.0.tgz#5eaac8eeb6b33b987b7fe6097ea6a8a146ab5760"
+  integrity sha512-zf9NV1NSlDLDjycnwm6hpFATCGl/K1lt0R/GdkAK2O5LN/rwJoB+Mh93gGJjut4YbmecbfgLWVGSTCr0Ewvvbw==
+  dependencies:
+    ansi-regex "^3.0.0"
+    ansi-styles "^3.2.0"
+
 private@^0.1.6, private@^0.1.8, private@~0.1.5:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -9046,6 +9158,11 @@ react-inspector@^2.3.0:
     babel-runtime "^6.26.0"
     is-dom "^1.0.9"
 
+react-is@^16.6.0:
+  version "16.6.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.6.0.tgz#456645144581a6e99f6816ae2bd24ee94bdd0c01"
+  integrity sha512-q8U7k0Fi7oxF1HvQgyBjPwDXeMplEsArnKt2iYhuIF86+GBbgLHdAmokL3XUFjTd7Q363OSNG55FOGUdONVn1g==
+
 react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -9123,6 +9240,16 @@ react-style-proptype@^3.0.0:
   dependencies:
     prop-types "^15.5.4"
 
+react-test-renderer@^16.6.0:
+  version "16.6.0"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.6.0.tgz#fe490096bed55c3f4e92c023da3b89f9d03fceb3"
+  integrity sha512-w+Y3YT7OX1LP5KO7HCd0YR34Ol1qmISHaooPNMRYa6QzmwtcWhEGuZPr34wO8UCBIokswuhyLQUq7rjPDcEtJA==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    react-is "^16.6.0"
+    scheduler "^0.10.0"
+
 react-textarea-autosize@^7.0.4:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/react-textarea-autosize/-/react-textarea-autosize-7.0.4.tgz#4e4be649b544a88713e7b5043f76950f35d3d503"
@@ -9179,6 +9306,14 @@ read-pkg-up@^2.0.0:
     find-up "^2.0.0"
     read-pkg "^2.0.0"
 
+read-pkg-up@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-4.0.0.tgz#1b221c6088ba7799601c808f91161c66e58f8978"
+  integrity sha512-6etQSH7nJGsK0RbG/2TeDzZFa8shjQ1um+SwQQ5cwKy0dhSXdOncEhb1CPpvQG4h7FyOV6EB6YlV0yJvZQNAkA==
+  dependencies:
+    find-up "^3.0.0"
+    read-pkg "^3.0.0"
+
 read-pkg@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-1.1.0.tgz#f5ffaa5ecd29cb31c0474bca7d756b6bb29e3f28"
@@ -9196,6 +9331,15 @@ read-pkg@^2.0.0:
     load-json-file "^2.0.0"
     normalize-package-data "^2.3.2"
     path-type "^2.0.0"
+
+read-pkg@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-3.0.0.tgz#9cbc686978fee65d16c00e2b19c237fcf6e38389"
+  integrity sha1-nLxoaXj+5l0WwA4rGcI3/Pbjg4k=
+  dependencies:
+    load-json-file "^4.0.0"
+    normalize-package-data "^2.3.2"
+    path-type "^3.0.0"
 
 "readable-stream@1 || 2", readable-stream@^2.0.0, readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.4, readable-stream@^2.0.6, readable-stream@^2.1.5, readable-stream@^2.2.2, readable-stream@^2.2.9, readable-stream@^2.3.3, readable-stream@^2.3.6:
   version "2.3.6"
@@ -9228,6 +9372,13 @@ readdirp@^2.0.0:
     graceful-fs "^4.1.11"
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
+
+realpath-native@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/realpath-native/-/realpath-native-1.0.2.tgz#cd51ce089b513b45cf9b1516c82989b51ccc6560"
+  integrity sha512-+S3zTvVt9yTntFrBpm7TQmQ3tzpCrnA1a/y+3cUHAc9ZR6aIjG0WNLR+Rj79QpJktY+VeW/TQtFlQ1bzsehI8g==
+  dependencies:
+    util.promisify "^1.0.0"
 
 recast@^0.15.0:
   version "0.15.5"

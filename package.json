@@ -22,15 +22,19 @@
     "@storybook/addon-actions": "^4.0.0",
     "@storybook/addon-info": "^4.0.0",
     "@storybook/addon-links": "^4.0.0",
+    "@storybook/addon-storyshots": "^4.0.0",
     "@storybook/addons": "^4.0.0",
     "@storybook/react": "^4.0.0",
     "@types/jest": "^23.3.8",
     "@types/node": "^10.12.1",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
+    "@types/storybook__addon-storyshots": "^3.4.3",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.4",
+    "babel-plugin-require-context-hook": "^1.0.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "react-test-renderer": "^16.6.0",
     "typescript": "^3.1.4"
   }
 }
